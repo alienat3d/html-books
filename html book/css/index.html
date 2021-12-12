@@ -1,57 +1,67 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML-BOOK</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML-BOOK</title>
+  <!-- Папка css пуста. В ней должен быть style.css, и соответственно путь исправляем на css/style.css -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav class="nav">
-        <div class="container">
-            <!--nav__row-->
-            <div class="nav__row">
-  
-               <a href="#" class="nav__logo">
-                  по полочкам
-               </a>
-  
-                   <ul class="nav__list">
-                       <li class="nav__item">
-                           <a href="#" class="nav__link">г. Санкт-Петербург, 
-                            наб. Pеки Карповки, 5 корпус П</a>
-                       </li>
-                       <li class="nav__item">
-                          <a href="#" class="nav__link">Поиск по полке...</a>
-                      </li>  
-                      </ul>
-                      </div>
-                    </nav>
-                    <header class="header">
-                        <div class="container">
-                            <div class="header__row">
-                                <ul class="header__list">
-                                    <li class="header__item">
-                                        <a href="#" class="header__link">Главная</a>
-                                    </li>
-                                    <li class="header__item">
-                                       <a href="#" class="header__link">Каталог книг</a>
-                                   </li>  
-                                    <li class="header__item">
-                                       <a href="#" class="header__link">Оплата и доставка</a>
-                                   </li>  
-                                    <li class="header__item">
-                                       <a href="#" class="header__link">Контакты</a>
-                                   </li>  
-                                   <div class="header__btn">
-                                    <a href="#" class="button">Регистрация</a>
-                                     </div>
-                                     <div class="header__btn">
-                                        <a href="#" class="button">Вход</a>
-                                         </div>
-                                     
-                                     
+  <!-- Пропущен тег <header>, в нём по-семантике должна быть вся шапка, включая и навигацию. -->
+  <nav class="nav">
+    <div class="container">
+      <!-- Что ты коментируешь это отлично, но лучше всё же делать немного не так. Делай комент в начале секции (либо перед шапкой (header) и перед подвалом (footer)). Это не ошибка, просто тебе там будет самой нагляднее. -->
+      <!--nav__row-->
+      <div class="nav__row">
+        <!-- class "по-БЭМу указываем всегда вначале, то есть '<a class="nav__logo" href="#">'. Также не ошибка, но так нагляднее и лучше. -->
+        <a href="#" class="nav__logo">
+          по полочкам
+        </a>
+        <!-- Если это меню, то пишем nav__menu, nav__menu-item, nav__menu-link etc. -->
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">г. Санкт-Петербург,
+              наб. Pеки Карповки, 5 корпус П</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Поиск по полке...</a>
+          </li>
+        </ul>
+      </div>
+      <!-- пропущен закрывающий </div> обёртки "container", нажимай по-чаще ctrl+shift+f, чтобы сделать автовыравнивание и тогда сама увидешь, что "ёлочка" тегов идёт не ровно и чего-то нехватает. -->
+  </nav>
+  <header class="header">
+    <div class="container">
+      <div class="header__row">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__link">Главная</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Каталог книг</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Оплата и доставка</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Контакты</a>
+          </li>
+          <!-- в списке ul должны быть только li, div'ы и прочее уже будут снаружи. Значит закрываем тут ul. -->
+          <!-- Кнопки кстати можно сделать и через button, так как они выполняют функционал и не обязательно их завёртывать в div, чем меньше тегов, тем лучше! :-) -->
+          <div class="header__btn">
+            <a href="#" class="button">Регистрация</a>
+          </div>
+          <div class="header__btn">
+            <a href="#" class="button">Вход</a>
+          </div>
+          <!-- Кажется тут случайно обрезолась львиная доля закрывающих тегов? Надо пофиксить.) -->
+
+          <!-- Специально не стал сам ничего править, чтобы тебе оставить место для лучшего обучения! По всем остальным вопросам можешь всегда в телегу!
+          Кстати, коментарии мои можешь стереть, как пофиксишь.) -->
 </body>
 
 </html>
