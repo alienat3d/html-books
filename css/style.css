@@ -1,3 +1,7 @@
+/* VENDOR CSS */
+@import url("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css");
+/* / VENDOR CSS */
+
 html {
   box-sizing: border-box;
 }
